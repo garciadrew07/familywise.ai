@@ -1,7 +1,7 @@
+import React from "react";
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -42,13 +42,21 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
+          {icon && (
+            <Col lg={11} md={11} sm={12} xs={24}>
+              <SvgIcon src={icon} width="100%" height="100%" />
+            </Col>
+          )}
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              {Array.isArray(content) ? (
+                content.map((item, index) => (
+                  <MinPara key={index}>{t(item)}</MinPara>
+                ))
+              ) : (
+                <MinPara>{t(content)}</MinPara>
+              )}
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
@@ -80,20 +88,22 @@ const ContentBlock = ({
                         (
                           item: {
                             title: string;
-                            content: string;
+                            content: string | string[] ;
                             icon: string;
                           },
                           id: number
                         ) => {
                           return (
                             <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
+                              {/* {item.icon && (
+                                <SvgIcon
+                                  src={item.icon}
+                                  width="60px"
+                                  height="60px"
+                                />
+                              )} */}
+                              {/* <MinTitle>{t(item.title)}</MinTitle>
+                              <MinPara>{t(item.content)}</MinPara> */}
                             </Col>
                           );
                         }

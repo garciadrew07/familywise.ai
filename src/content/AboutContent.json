@@ -1,6 +1,6 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "About Us",
+  "text": "Cousins Tremon and Andrew, both with backgrounds in tech and finance, found themselves deep in conversation about the challenges their family faced with estate planning. They shared stories of lost passwords, forgotten wills, and the daunting probate process their loved ones navigated after a family member's passing. The emotional and financial toll it took on their family was evident and deeply felt. As the night wore on and stories flowed, a shared vision began to take shape. They realized that while technology had transformed so many aspects of their lives, it had barely touched one of the most crucial—planning for the future. They envisioned a platform that could simplify this process, making it not just accessible but empowering. It would be a place where families could secure their legacies without the burden of complexity or the fear of oversight. Fueled by personal experience and a passion for making a difference, Tremon and Andrew set to work. They combined Andrews Technical expertise  tech savvy with Tremons experience in Finance and business intelligence, dedicating months to research, development, and countless zoom meetings. They sought advice from wealth managers, legal experts, and, most importantly, families like theirs who had felt the sting of unpreparedness. The result was a platform that embodied their vision of ease, security, and empowerment. It was designed not just as a tool but as a companion in the journey of life planning, inspired by their family's stories and built for families everywhere. As they launched the company, they knew they were doing more than starting a business; they were honoring their roots and providing a service that could spare others the difficulties their family had faced. The cousins' venture was more than a company—it was a mission, born from personal experience and driven by the desire to protect and elevate the legacies of families around the world.",
   "section": [
     {
       "title": "Why Antd?",
@@ -14,3 +14,5 @@
     }
   ]
 }
+
+

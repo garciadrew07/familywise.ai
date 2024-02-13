@@ -44,7 +44,7 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 21px;
 `;
 
 export const ButtonWrapper = styled("div")`

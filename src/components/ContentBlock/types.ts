@@ -2,7 +2,7 @@ import { TFunction } from "react-i18next";
 export interface ContentBlockProps {
   icon: string;
   title: string;
-  content: string;
+  content: string | string[];
   section?: {
     title: string;
     content: string;
@@ -21,4 +21,5 @@ export interface ContentBlockProps {
   t: TFunction;
   id: string;
   direction: "left" | "right";
+
 }
