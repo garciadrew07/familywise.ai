@@ -7,10 +7,10 @@ import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
-  Content,
+  // Content,
   ContentWrapper,
   ServiceWrapper,
-  MinTitle,
+  // MinTitle,
   MinPara,
   StyledRow,
   ButtonWrapper,
