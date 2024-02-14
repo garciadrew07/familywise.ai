@@ -1,10 +1,9 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,18 +25,25 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}  # Adjust according to your setup
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        # Additional configuration steps if needed
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload entire repository or specify files/folders to upload
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        # Additional deployment configuration if needed
+      - name: Show deployed app URL
+        run: echo "Deployed app URL: ${{ steps.deployment.outputs.page_url }}"
+      - name: Open deployed app in browser
+        run: open ${{ steps.deployment.outputs.page_url }}
+        if: runner.os == 'macOS'  # Open in browser only if the runner is macOS
