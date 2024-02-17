@@ -1,6 +1,7 @@
 {
-  "title": "Welcome to FamilyWise",
-  "text": "Your families life, Organized",
+  "title": "Supercharge Family decisions 👋, we’re FamiyWise.ai",
+  "text": ["A proactive platform to organize, protect, and grow your family's estate","item1","item2","item3"],
+
   "button": [
     {
       "title": "Explore"
