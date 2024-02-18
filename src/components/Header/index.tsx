@@ -16,6 +16,8 @@ import {
   Span,
 } from "./styles";
 
+
+
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
 
@@ -57,9 +59,9 @@ const Header = ({ t }: { t: TFunction }) => {
   return (
     <HeaderSection>
       <Container>
-        <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="familywise.svg" width="101px" height="64px" />
+        <Row justify="space-between" style={{ marginTop: "-7em", marginBottom: "-10em"}}>
+          <LogoContainer to="/" aria-label="homepage" >
+            <SvgIcon src="familywise.svg" width="301px" height="264px"/>
           </LogoContainer>
           <NotHidden>
             <MenuItem />
