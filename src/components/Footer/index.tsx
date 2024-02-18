@@ -40,7 +40,7 @@ const Footer = ({ t }: { t: TFunction }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="25px" height="25px" borderRadius="10px" />
       </a>
     );
   };
@@ -95,6 +95,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                     aria-label="homepage"
                     width="30px"
                     height="30px"
+                    borderRadius="10px" 
                   />
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("es")}>
@@ -103,6 +104,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                     aria-label="homepage"
                     width="30px"
                     height="30px"
+                    borderRadius="10px" 
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
@@ -124,6 +126,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   aria-label="homepage"
                   width="101px"
                   height="64px"
+                  borderRadius="10px" 
                 />
               </LogoContainer>
             </NavLink>

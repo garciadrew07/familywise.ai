@@ -1,6 +1,10 @@
 {
-  "title": "Supercharge Family decisions 👋, we’re FamiyWise.ai",
-  "text": ["A proactive platform to organize, protect, and grow your family's estate","item1","item2","item3"],
+  "title": "Supercharge Family decisions",
+  "text": ["👋 We’re FamiyWise.ai - A proactive platform to organize, protect, and grow your family's estate",
+           "🤝 Build a will or trust - Avoid probate",
+           "📚 Organize my documents - All in 1 platform",
+           "🏠 Grow your family estate - Enhance a legacy"
+          ],
 
   "button": [
     {

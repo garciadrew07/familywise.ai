@@ -27,7 +27,7 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #F2F7FF;
         overflow-x: hidden;
     }
 
@@ -58,17 +58,43 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         // font-family: 'Motiva Sans Bold', serif;
-        color: #004e92;
-         font-size: 46px;
-        // line-height: 1.18;
+        color: #11142D;
+        white-space: pre-wrap;
+        overflow: visible;
+        font-family: 'Poppins';
+        font-size: 54px;
+        font-weight: 600;
+        color: rgba(17, 20, 45, 1);
+        line-height: 1.2;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        opacity: 1;
+        align-self: flex-start;
+        min-width: 0px;
+        order: 2;
+        min-height: 116px;
+        height: max-content;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: calc(100% - 0px);
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        z-index: 5;
 
-        letter-spacing: .015em;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: proxima-soft,sans-serif;
-        // font-size: 7.2rem;
-        font-weight: 700;
-        line-height: 1;
+
+
+        //  font-size: 46px;
+        // // line-height: 1.18;
+
+        // letter-spacing: .015em;
+        // margin-top: 0;
+        // margin-bottom: 0;
+        // font-family: proxima-soft,sans-serif;
+        // // font-size: 7.2rem;
+        // font-weight: 700;
+        // line-height: 1;
 
 
 
