@@ -49,7 +49,7 @@ const ContentBlock = ({
           )}
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h3>{t(title)}</h3>
+              <div className="introText">{t(title)}</div>
               {Array.isArray(content) ? (
                 content.map((item, index) => (
                   <MinPara key={index}>{t(item)}</MinPara>

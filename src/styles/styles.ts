@@ -32,7 +32,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #004e92;
+        color: #4484F0;
     }
 
     input,
@@ -57,7 +57,6 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        // font-family: 'Motiva Sans Bold', serif;
         color: #11142D;
         white-space: pre-wrap;
         overflow: visible;
@@ -107,8 +106,35 @@ export const Styles = createGlobalStyle`
         }
     }
 
+    .introText {
+        color: #11142D;
+        white-space: pre-wrap;
+        overflow: visible;
+        font-family: 'Poppins';
+        font-size: 54px;
+        font-weight: 600;
+        color: rgba(17, 20, 45, 1);
+        line-height: 1.2;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        opacity: 1;
+        align-self: flex-start;
+        min-width: 0px;
+        order: 2;
+        min-height: 116px;
+        height: max-content;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: calc(100% - 0px);
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        z-index: 5;
+    }
+
     p {
-        color: #004e92;
+        color: #818091;
         font-size: 21px;        
         line-height: 1.41;
     }

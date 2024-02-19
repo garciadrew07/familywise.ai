@@ -44,7 +44,7 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #004e92;
+  color: #4484F0;
   font-size: 14px;
   width: 70%;
 `;
@@ -62,23 +62,23 @@ export const Large = styled(Link)`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: #0053B7;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: #0053B7 wavy underline;
   }
 `;
 
 export const Chat = styled("p")`
-  color: #004e92;
+  color: #4484F0;
   max-width: fit-content;
-  border-bottom: 1px solid #004e92;
+  border-bottom: 1px solid #4484F0;
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    border-bottom: 1px solid #0053B7;
+    color: #0053B7;
   }
 `;
 
@@ -121,7 +121,7 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: #0053B7;
     }
   }
 `;
@@ -129,7 +129,7 @@ export const FooterContainer = styled("div")`
 export const Language = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #004e92;
+  color: #4484F0;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -139,7 +139,7 @@ export const Language = styled("h4")`
 export const Label = styled("label")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #004e92;
+  color: #4484F0;
   display: block;
   margin-bottom: 2rem;
   font-family: "Motiva Sans Bold", serif;
