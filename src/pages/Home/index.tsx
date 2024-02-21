@@ -107,6 +107,7 @@ const Home = () => {
         title={DashboardContent.title}
         // content={ProductContent.text.map(option => <p>{option}</p>)}
         content={DashboardContent.text}
+        button={DashboardContent.button}
         icon="dashboard.png"
         id="product"
         titleSize="44px" // Customize the title size here
