@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import NewPoweredContent from "../../content/NewPoweredContent.json";
+import DashboardContent from "../../content/DashboardContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -23,7 +24,7 @@ const Home = () => {
         button={IntroContent.button}
         icon="family1.svg" 
         id="intro"
-        titleSize="24px" // Customize the title size here
+        titleSize="44px" // Customize the title size here
         contentSize="16px" // Customize the content size here
 
 
@@ -35,7 +36,7 @@ const Home = () => {
         button={IntroContent.button}
         icon="product-launch.svg" 
         id="middle"
-        titleSize="24px" // Customize the title size here
+        titleSize="44px" // Customize the title size here
         contentSize="16px" // Customize the content size here
 
       />
@@ -46,7 +47,7 @@ const Home = () => {
         section={AboutContent.section}
          icon="graphs.svg"
         id="about"
-        titleSize="24px" // Customize the title size here
+        titleSize="44px" // Customize the title size here
         contentSize="16px" // Customize the content size here
 
       />
@@ -56,7 +57,7 @@ const Home = () => {
         content={MissionContent.text}
         icon="family2.svg"
         id="family2"
-        titleSize="24px" // Customize the title size here
+        titleSize="44px" // Customize the title size here
         contentSize="16px" // Customize the content size here
 
       />
@@ -67,8 +68,9 @@ const Home = () => {
         content={ProductContent.text}
         icon="grandma.svg"
         id="product"
-        titleSize="24px" // Customize the title size here
+        titleSize="44px" 
         contentSize="16px" // Customize the content size here
+        marginTop="-150px"
 
       />
 
@@ -78,7 +80,6 @@ const Home = () => {
         content={NewPoweredContent.text}
         icon="poweredBy.jpg"
         id="poweredBy"
-        titleSize="24px"
         contentSize="30px"
         style={{
           backgroundColor: '#d4e4f9', // Light blue background color
@@ -100,6 +101,20 @@ const Home = () => {
           contentSize="16px" // Customize the content size here
 
         /> */}
+
+      <ContentBlock
+        direction="right"
+        title={DashboardContent.title}
+        // content={ProductContent.text.map(option => <p>{option}</p>)}
+        content={DashboardContent.text}
+        icon="dashboard.png"
+        id="product"
+        titleSize="44px" // Customize the title size here
+        contentSize="16px" // Customize the content size here
+        marginTop="20px"
+
+        />
+
 
 
 

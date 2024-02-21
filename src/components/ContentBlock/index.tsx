@@ -27,13 +27,15 @@ const ContentBlock = ({
   contentSize,
   className,
   style,
-  minParaColors, // Add minParaColors prop to accept color for each MinPara
+  minParaColors,
+  marginTop, // Add marginTop prop
 }: ContentBlockProps & {
   titleSize?: string;
   contentSize?: string;
   className?: string;
   style?: React.CSSProperties;
-  minParaColors?: string[]; // Define minParaColors prop as string array
+  minParaColors?: string[];
+  marginTop?: string; // Define marginTop prop
 }) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -43,7 +45,7 @@ const ContentBlock = ({
   };
 
   return (
-    <ContentSection className={className} style={style}>
+    <ContentSection className={className} style={{ ...style, marginTop }}> {/* Apply marginTop to style */}
       <Fade direction={direction} triggerOnce>
         <StyledRow justify="space-between" align="middle" id={id} direction={direction}>
           {icon && (
@@ -56,7 +58,7 @@ const ContentBlock = ({
               <div className="introText" style={{ fontSize: titleSize }}>
                 {t(title)}
               </div>
-              <div style={{ marginTop: "-5em" }}>
+              <div >
                 {Array.isArray(content) ? (
                   content.map((item, index) => (
                     <MinPara key={index} style={{ fontSize: contentSize, color: minParaColors && minParaColors[index] }}>

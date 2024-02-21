@@ -7,7 +7,6 @@ import i18n from "i18next";
 import {
   Title,
   NavLink,
-  Extra,
   LogoContainer,
   Para,
   Large,
@@ -47,7 +46,7 @@ const Footer = ({ t }: { t: TFunction }) => {
   return (
     <>
       {/* <FooterSection> */}
-        <Container>
+        {/* <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
@@ -109,9 +108,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LanguageSwitchContainer>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       {/* </FooterSection> */}
-      <Extra>
+      {/* <Extra> */}
         <Container border={true}>
           <Row
             justify="space-between"
@@ -129,7 +128,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 />
               </LogoContainer>
             </NavLink>
-            <FooterContainer>
+            {/* <FooterContainer> */}
               <SocialLink
                 href="https://github.com/"
                 src="github.svg"
@@ -152,10 +151,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 rel="noopener noreferrer"
               >
               </a>
-            </FooterContainer>
+            {/* </FooterContainer> */}
           </Row>
         </Container>
-      </Extra>
+      {/* </Extra> */}
     </>
   );
 };

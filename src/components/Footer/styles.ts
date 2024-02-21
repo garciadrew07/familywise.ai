@@ -29,14 +29,14 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const Extra = styled("section")`
-  background: rgb(241, 242, 243);
-  position: relative;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 2rem;
-`;
+// export const Extra = styled("section")`
+//   background: rgb(241, 242, 243);
+//   position: relative;
+//   width: 100%;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-bottom: 2rem;
+// `;
 
 export const LogoContainer = styled("div")`
   display: flex;
