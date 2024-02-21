@@ -23,3 +23,35 @@ export const StyledButton = styled("button")<{ color?: string }>`
     background-color: #0053B7;
   }
 `;
+
+export const Button2 = styled.button`
+  overflow: visible;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(17, 20, 45);
+  border-radius: 12px;
+  padding: 0px;
+  opacity: 1;
+  transition: background 200ms ease 0s;
+  cursor: pointer;
+  align-self: center;
+  min-width: 222px;
+  max-width: 222px;
+  order: 4;
+  min-height: 58px;
+  max-height: 58px;
+  width: 222px;
+  flex-grow: 1;
+  height: 58px;
+  margin: 0px;
+  z-index: 66;
+  background: none transparent;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    border: 1px solid #0053B7;
+    background-color: rgb(17, 20, 45) ;
+  }
+`;

@@ -7,10 +7,8 @@ import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
-  // Content,
   ContentWrapper,
   ServiceWrapper,
-  // MinTitle,
   MinPara,
   StyledRow,
   ButtonWrapper,
@@ -25,7 +23,18 @@ const ContentBlock = ({
   t,
   id,
   direction,
-}: ContentBlockProps) => {
+  titleSize,
+  contentSize,
+  className,
+  style,
+  minParaColors, // Add minParaColors prop to accept color for each MinPara
+}: ContentBlockProps & {
+  titleSize?: string;
+  contentSize?: string;
+  className?: string;
+  style?: React.CSSProperties;
+  minParaColors?: string[]; // Define minParaColors prop as string array
+}) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -34,32 +43,35 @@ const ContentBlock = ({
   };
 
   return (
-    <ContentSection>
+    <ContentSection className={className} style={style}>
       <Fade direction={direction} triggerOnce>
-        <StyledRow
-          justify="space-between"
-          align="middle"
-          id={id}
-          direction={direction}
-        >
+        <StyledRow justify="space-between" align="middle" id={id} direction={direction}>
           {icon && (
             <Col lg={11} md={11} sm={12} xs={24}>
-              <SvgIcon src={icon} width="100%" height="100%" borderRadius="10px"  />
+              <SvgIcon src={icon} width="100%" height="100%" borderRadius="10px" />
             </Col>
           )}
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <div className="introText">{t(title)}</div>
-              {Array.isArray(content) ? (
-                content.map((item, index) => (
-                  <MinPara key={index}>{t(item)}</MinPara>
-                ))
-              ) : (
-                <MinPara>{t(content)}</MinPara>
-              )}
+              <div className="introText" style={{ fontSize: titleSize }}>
+                {t(title)}
+              </div>
+              <div style={{ marginTop: "-5em" }}>
+                {Array.isArray(content) ? (
+                  content.map((item, index) => (
+                    <MinPara key={index} style={{ fontSize: contentSize, color: minParaColors && minParaColors[index] }}>
+                      {t(item)}
+                    </MinPara>
+                  ))
+                ) : (
+                  <MinPara style={{ fontSize: contentSize }}>
+                    {t(content)}
+                  </MinPara>
+                )}
+              </div>
               {direction === "right" ? (
                 <ButtonWrapper>
-                  {typeof button === "object" &&
+                  {button &&
                     button.map(
                       (
                         item: {
@@ -83,12 +95,12 @@ const ContentBlock = ({
               ) : (
                 <ServiceWrapper>
                   <Row justify="space-between">
-                    {typeof section === "object" &&
+                    {section &&
                       section.map(
                         (
                           item: {
                             title: string;
-                            content: string | string[] ;
+                            content: string | string[];
                             icon: string;
                           },
                           id: number

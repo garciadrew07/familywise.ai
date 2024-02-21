@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const FooterSection = styled("footer")`
-  background: rgb(241, 242, 243);
-  padding: 2.5rem 0;
-`;
+// export const FooterSection = styled("footer")`
+//   background: rgb(241, 242, 243);
+//   padding: 2.5rem 0;
+// `;
 
 export const Title = styled("h4")`
   font-size: 22px;

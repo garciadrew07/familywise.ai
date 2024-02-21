@@ -5,7 +5,6 @@ import Container from "../../common/Container";
 
 import i18n from "i18next";
 import {
-  FooterSection,
   Title,
   NavLink,
   Extra,
@@ -47,7 +46,7 @@ const Footer = ({ t }: { t: TFunction }) => {
 
   return (
     <>
-      <FooterSection>
+      {/* <FooterSection> */}
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -111,7 +110,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
           </Row>
         </Container>
-      </FooterSection>
+      {/* </FooterSection> */}
       <Extra>
         <Container border={true}>
           <Row
@@ -152,12 +151,6 @@ const Footer = ({ t }: { t: TFunction }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  height="36"
-                  style={{ border: 0, height: 36 }}
-                  src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
-                  alt="Buy Me a Coffee at ko-fi.com"
-                />
               </a>
             </FooterContainer>
           </Row>

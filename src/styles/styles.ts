@@ -60,7 +60,7 @@ export const Styles = createGlobalStyle`
         color: #11142D;
         white-space: pre-wrap;
         overflow: visible;
-        font-family: 'Poppins';
+        font-family: 'Motiva Sans Light';
         font-size: 54px;
         font-weight: 600;
         color: rgba(17, 20, 45, 1);
@@ -110,9 +110,9 @@ export const Styles = createGlobalStyle`
         color: #11142D;
         white-space: pre-wrap;
         overflow: visible;
-        font-family: 'Poppins';
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 54px;
-        font-weight: 600;
+        font-weight: 500;
         color: rgba(17, 20, 45, 1);
         line-height: 1.2;
         border-radius: 0px;
@@ -171,4 +171,52 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+
+    @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(/static/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(/static/fonts/MaterialIcons-Regular.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Material Icons Outline";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(/static/fonts/MaterialIcons-Outlined.woff2) format("woff2"), url(/static/fonts/MaterialIconsOutlined-Regular.otf) format("opentype");
+      }
+      .material-icons {
+        font-family: "Material Icons";
+      }
+      
+      .material-icons-outline {
+        font-family: "Material Icons Outline";
+      }
+
+      .blueBackground     
+            overflow: visible;
+            justify-content: center;
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            padding: 0px 20px 0px 20px;
+            opacity: 1;
+            align-self: center;
+            min-width: 0px;
+            max-width: 1200px;
+            order: 1;
+            min-height: 557px;
+            height: max-content;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: calc(100% - 0px);
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            z-index: 94;
+            -webkit-linear-gradient(top, rgb(212, 227, 249) 0%, rgb(212, 229, 255) 100%);
+            box-shadow: rgba(17, 20, 45, 0.08) 0px 0px 200px 0px;
+}
+  
 `;
